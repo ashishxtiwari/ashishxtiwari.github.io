@@ -1,0 +1,413 @@
+<!DOCTYPE HTML PUBLIC "-//w3c//DTD HTML 3.2//EN">
+<HTML>
+<HEAD>
+<TITLE>Ashish Tiwari's Homepage</TITLE>
+
+<script type="text/javascript">
+  function toggleNext(objid) {
+   var elmt = document.getElementById(objid);
+   var next = elmt.nextSibling;
+   while (next.nodeType != 1) next = next.nextSibling;
+   next.style.display = ((next.style.display=='none') ? 'inline':'none');
+  }
+  function toggleDisplay(objid) {
+   var elmt = document.getElementById(objid);
+   display_val = elmt.style.display;
+   if (display_val === "none") {
+     elmt.style.display = "inline";
+   } else {
+     elmt.style.display = "none";
+   }
+  };
+</script>
+<style type="text/css"> div.expandableHead {cursor:pointer;display:inline;text-decoration:underline;} </style>
+</HEAD>
+
+<BODY
+  Background = ""
+  Bgcolor = "#ffffff"
+  Text        = "#000000"
+  Link        = "blue"
+  Vlink       = "purple"
+  Alink       = "red" >
+
+  <H1>Ashish Tiwari</H1>
+
+  <H3> Research Interests </H3>
+    <div id='dp' class="expandableHead" onclick="toggleNext('dp');">Decision Procedures</div>
+     <p style="display:none"> : Equational Reasoning, Term Rewriting, Reals, Exists-Forall </p>;
+    <div id='hs' class="expandableHead" onclick="toggleNext('hs');">Hybrid Systems </div>
+     <p style="display:none"> : Verification, Synthesis, Abstraction, Computability and Control, Applications to Air/Ground Vehicles</p>;
+    <div id='sa' class="expandableHead" onclick="toggleNext('sa');">Static Analysis </div>
+     <p style="display:none"> : <a href="http://research.microsoft.com/en-us/um/people/sumitg/pubs/logical_ai.html">Logical Abstract Interpretation</a>, Decidability, combination, and pointer analysis, Probabilistic programs</p> ;
+    <div id='ssb' class="expandableHead" onclick="toggleNext('ssb');">Symbolic Systems Biology</div>
+     <p style="display:none"> : <a href="http://pl.csl.sri.com/"> Pathway Logic</a> </p> 
+     
+     <br>
+
+    <p><A HREF="http://www.csl.sri.com/~tiwari/CV/CV.06.17.pdf"> CV.pdf</A></p>
+
+    <p>
+
+  <H3> Current Professional Activities</H3>
+   <ul>
+    <li> Steering Committee: SNR
+    <li> Program Committees: Please consider submitting to the following conferences:
+     <ul>
+      <li> <a href="https://easychair.org/conferences/?conf=hscc2021">HSCC 2021</a>.</li>
+      <li> <a href="http://dsn2021.ntu.edu.tw/">DSN 2021</a>.</li>
+      <li> Past PC Participation (see under Miscellaneous below).</li>
+     </ul>
+
+    <li> <div id='projects' style="cursor:pointer;text-decoration:underline" onclick="toggleNext('projects');">Projects</div>
+     <div style="display:inline">
+     <ul>
+      <li> 
+       <a href="http://www.csl.sri.com/users/tiwari/softwares/auto-crypto/">
+       Synudic: Synthesis using Dual Interpretation</a>.</li>
+      <li> 
+       <a href="http://www.csl.sri.com/users/tiwari/softwares/synth_distributed/">
+       Bounded Model Synthesis</a>.</li>
+      <li> 
+       <a href="http://www.csl.sri.com/users/tiwari/html/nsf0720721.html">
+       Invariants for continuous and hybrid systems</a>.</li>
+      <li> 
+       <a href="http://www.csl.sri.com/users/tiwari/html/nsf0917398.html">
+       SMT-Solving, Reals, Applications</a>.</li>
+      <li>
+       <a href="VVFCS.html">
+       Fault-tolerant distributed systems </a> </li>
+      <li>
+       <a href="http://research.microsoft.com/en-us/um/people/sumitg/pubs/vs3.html">
+       Verification and Synthesis using SMT Solvers </a> </li>
+      <li><a href="existsforall/">Certificate-Based Verification: Tools and Benchmarks</a></li>
+      <li><a href="relational-abstraction/">Relational Abstraction</a></li>
+      <li><a href="https://sri-csl.github.io/">sri-csl.github.io</a> -- CSL lab tools.
+     </ul>
+     </div>
+    </li>
+   </ul>
+
+  <H3> Research Publications (reverse chronological order) </H3>
+  See also <a href="http://scholar.google.com/citations?user=-TFCgqsAAAAJ">list on google scholar</a> and <a href="http://www.informatik.uni-trier.de/~ley/db/indices/a-tree/t/Tiwari%3AAshish.html"> on DBLP</a>.
+  <!--
+  <div id='pubsAll1' style="cursor:pointer;display:inline;" onclick="toggleDisplay('pubsAll2');toggleDisplay('pubsAll1');">Click here to display publication list.</div>
+  -->
+  <!--
+  <div id='pubsAll2' style="cursor:pointer;display:none;" onclick="toggleDisplay('pubsAll2');toggleDisplay('pubsAll1');">Click to retract publication list.
+  -->
+  <div>
+   <ul>
+    <li> Anders Miltner, Sumit Gulwani, Vu Le, Alan Leung, Arjun Radhakrishna, Gustavo Soares, Ashish Tiwari, Abhishek Udupa.  <a href="https://www.microsoft.com/en-us/research/uploads/prod/2019/08/oopsla19.pdf">On the fly synthesis of edit suggestions</a>. PACMPL 3(OOPSLA) 2019.  </li>
+    <li> A. Desai, S. Ghosh, S. A. Seshia, N. Shankar, and A. Tiwari.  <a href="https://arxiv.org/pdf/1808.07921.pdf"> SOTER: A runtime assurance framework for programming safe robotics systems.  </a> DSN 2019. pp 138-150.  </li>
+    <li> Souradeep Dutta, Xin Chen, Susmit Jha, Sriram Sankaranarayanan and Ashish Tiwari.  <a href="https://susmitjha.github.io/papers/hscc19.pdf"> Sherlock - A Tool For Verification Of Neural Network Feedback Systems"</a>. HSCC 2019. (Best Demo/poster award) </li>
+    <li> <a href="https://arxiv.org/abs/1710.03875">Learning Specifications from Demonstrations</a>. NIPS2018.</li>
+    <li> Souradeep Dutta, Susmit Jha, Sriram Sankaranarayanan and Ashish Tiwari. <a href="https://arxiv.org/abs/1709.09130">Output Range Analysis for Deep Feedforward Neural Networks. </a>In NFM 2018. </li>
+    <li> Usama Mehmood, Nicola Paoletti, Dung Phan, Radu Grosu, Shan Lin, Scott D. Stoller, Ashish Tiwari, Junxing Yang, and Scott A. Smolka. 
+     Declarative vs Rule-based Control for Flocking Dynamics.
+     In SAC 2018.</li>
+   <li> With Susmit Jha, Sanjit Seshia, and N. Shankar.
+     TeLEx: Passive STL learning using only positive examples. In RV 2017. </li>
+   <li> With Scott A. Smolka, Lukas Esterle, Anna Lukina, Junxing Yang, and Radu Grosu.
+     Attacking the V: On the resiliency of Adaptive-Horizon MPC. In ATVA 2017.</li> 
+   <li> With Adria Gascon, Brent Carmer and Umang Mathur.
+     <a href="http://umathur3.web.engr.illinois.edu/papers/synudic-cav2017.pdf">
+     Look for the proof to find the program: Decorated-Component-Based Program Synthesis</a>. In CAV 2017. </li>
+   <li> With Anna Lukina, Lukas Esterle, Christian Hirsch, Ezio Bartocci, Junxing Yang, Scott A. Smolka and Radu Grosu. 
+     <a href="https://ti.tuwien.ac.at/cps/people/grosu/files/tacas17.pdf">
+     ARES: Adaptive Receding-Horizon Synthesis of Optimal Plans.
+     </a>
+     In TACAS 2017.  </li> 
+   <li> With P. Lincoln.  A search-based procedure for nonlinear real arithmetic.
+       <a href="http://rdcu.be/j1b6">pdf</a>. Formal Methods in System Design:48:257, June 2016. doi:10.1007/s10703-016-0245-8</li> 
+   <li> Junxing Yang, Radu Grosu, Scott A. Smolka, and Ashish Tiwari.  V-formation as optimal control. In <a href="http://www.snl.salk.edu/~navlakha/BDA2016/">4th Workshop on Biological Distrbuted Algorithms</a>.</li> 
+   <li> Shalini Ghosh, Patrick Lincoln, Ashish Tiwari, and Jerry Zhu.  Trusted machine learning for probabilistic models.  In <a href="https://sites.google.com/site/wildml2016/schedule"> Reliable Machine Learning in the Wild</a>. Workshop colocated with ICML 2016. </li> 
+   <li> With Martin Schaef.  Severity levels of inconsistent code.  In ATVA 2015. </li> 
+   <li> With Adria Gascon and Manfred Schmidt-Schauss.  Two-restricted one context unification is in polynomial time.  In CSL 2015.  </li>
+   <li> With Adria Gascon and Manfred Schmidt-Schauss.  <a href="papers/lics15.pdf">One context unification problems solvable in polynomial time.</a>  In LICS 2015. </li> 
+   <li> With Adria Gascon and Bruno Dutertre.  <a href="softwares/auto-crypto/cade.pdf">Synthesis Using Dual Interpretation</a>.  In CADE 2015. </li> 
+   <li> A. Tiwari.  <a href="http://www.csl.sri.com/~tiwari/papers/cav15.pdf"> Time-Aware Abstractions in HybridSal</a>. In CAV 2015.  </li>
+   <li> A. Tiwari.  <a href="papers/nsv2015.pdf">"Attacking a feedback controller"</a>. In Proc. 7th and 8th Intl.  Workshop on Numerical Software Verification, NSV 2015.  <a href="http://dx.doi.org/10.1016/j.entcs.2015.10.014">PDF</a>; see also <a href="http://www.sciencedirect.com/science/article/pii/S1571066115000559">ENTCS Volume 317, pages 141-153</a>.</li> 
+   <li> With A. Gascon, P. Subramanyan, B. Dutertre, D. Jovanovic, and S. Malik.  "Template-based Circuit Understanding". In FMCAD 2014.  </li>
+   <li> With Adria Gascon.  <a href="http://arxiv.org/abs/1407.5392v1">"Synthesis of a simple self-stabilizing system"</a>.  In Proceedings 3rd SYNT Workshop. arXiv:1407.5392.  EPTCS 157, 2014. pp. 5-16. </li> 
+   <li> With P. Lincoln. "A Nonlinear Real Arithmetic Fragment", In CAV 2014.  Click <a href="http://www.csl.sri.com/users/tiwari/softwares/nl_eigen_solver/">here</a> for benchmarks, code, and pdf of the paper. </li>
+   <li> With Adria Gascon. "A Synthesized Algorithm for Interactive Consistency", In NFM 2014. To appear. See <a href="softwares/synth_distributed/index.html">here</a> for SAL models.</li> 
+   <li> With Bruno Dutertre, Dejan Jovanovic, Thomas de Candia, Patrick Lincoln, John Rushby, Dorsa Sadigh, Sanjit Seshia.  <a href="papers/hicons14.pdf"> "Safety Envelope for Security"</a>, In HiCoNS 2014.</li> 
+   <li> With Jan Leike. "Synthesis of polynomial lasso programs", In VMCAI 2014.  A slightly modified version is <a href="http://arxiv.org/abs/1311.4046">here</a>.  Link to <a href="softwares/synthesis_for_polynomial_lasso_programs_source.zip">software</a>.  </li> 
+   <li> With Wenchao Li, Adria Gascon, Pramod Subramanyan, Nestan Tsiskaridze, Wei Yang Tan, Sharad Malik, Natarajan Shankar, and Sanjit A. Seshia, "Reverse engineering digital circuits using structural and functional analyses".  TETC special issue on emerging nanoscale architectures for security, trust and reliability. </li> 
+   <li> With Parasara Sridhar Duggirala, <a href="papers/emsoft2013_hsalcegar.pdf">"Safety verification for linear systems"</a>, In EMSOFT 2013. (Best Paper Award) </li>
+   <li> With Sergio Mover, Alessandro Cimatti and Stefano Tonetta, <a href="http://www.csl.sri.com/users/tiwari/papers/emsoft13b.pdf">"Time-aware relational abstraction for Hybrid systems", In EMSOFT 2013</a>.  </li>
+   <li> With Wenchao Li, Adria Gascon, Pramod Subramanyan, Wei Yang Tan, Sharad Malik, Natarajan Shankar, and Sanjit A. Seshia, "WordRev: Finding word-level structures in a sea of bit-level gates".  In <a href="http://www.hostsymposium.org">IEEE Intl. Symp. on Hardware-Oriented Security and Trust</a>, HOST, June 2-3, 2013, Austin.  </li>
+   <li> With Steven Eker, Markus Krummenacker, Alexander Shearer, Ingrid Keseler, Carolyn Talcott, and Peter Karp, "Computing minimal nutrient sets from metabolic networks via linear constraint solving".  BioMed Central BMC Bioinformatics 14:114, 2013.  <a href="http://www.biomedcentral.com/1471-2105/14/114">URL</a>.  </li>
+   <li> With Aditya Zutshi and Sriram Sankaranarayanan, <a href="http://www.csl.sri.com/users/tiwari/relational-abstraction/timed-relational.pdf"> "Timed Relational Abstractions For Sampled Data Control Systems".  </a>, In CAV 2012.  </li>
+   <li> Ashish Tiwari, <a href="http://www.csl.sri.com/~tiwari/relational-abstraction/hsal-tool-paper.pdf"> "HybridSal Relational Abstracter"</a>.  In CAV 2012. </li> 
+   <li> Ashish Tiwari, <a href="http://www.csl.sri.com/users/tiwari/papers/cdc2011.pdf">"Compositionally analyzing a PI controller family"</a>, In Proc. IEEE Conf. on Decision and Control, <a href="http://control.disp.uniroma2.it/cdcecc2011/">CDC 2011</a>.  </li>
+   <li> With Susmit Jha and Sanjit Seshia, <a href="http://www.eecs.berkeley.edu/~sseshia/pubs/b2hd-jha-emsoft11.html"> "Synthesis of Optimal Switching Logic for Hybrid Systems"</a>.  In Proc. EMSOFT 2011.  </li>
+   <li> With <a href="http://www.cs.colorado.edu/~srirams/">Sriram Sankaranarayanan</a>, <a href="http://www.csl.sri.com/users/tiwari/relational-abstraction/relational.pdf"> "Relational Abstractions for Continuous and Hybrid Systems"</a>, In CAV 2011: 686-702.  </li>
+   <li> With Thomas Sturm, <a href="papers/issac2011.pdf"> "Verification and synthesis using real quantifier elimination"</a>.  In ISSAC 2011.  </li>
+   <li> With Sumit Gulwani, Susmit Jha and Ramarathnam Venkatesan, <a href="papers/pldi2011-bitvector.pdf"> "Synthesis of loop-free programs"</a>.  PLDI 2011.  Used as a basis for a synthesizer that is part of LLVM superoptimizer <a href="github.com/google/souper">Souper</a> by <a href="www.cs.utah.edu/~rsas">Raimondas Sasnauskas</a> and <a href="www.cs.utah.edu/~regehr">John Regehr</a>.  </li>
+   <li> With Sumit Gulwani and Vijay Korthikanti, <a href="papers/pldi2011-geometry.pdf"> "Synthesizing geometry constructions"</a>.  PLDI 2011.  </li>
+   <li> With Ankur Taly and Sumit Gulwani, "Synthesizing switching logic using constraint solving", In Intl. journal on software tools for technology transfer (STTT).  <a href="http://link.springer.com/article/10.1007%2Fs10009-010-0172-8"> SpringerLink.</a> Vol 13, Issue 6 (2011), 519-535.  </li>
+   <li> With Ankur Taly, <a href="http://theory.stanford.edu/~ataly/Papers/emsoft10.pdf"> "Switching logic synthesis for reachability"</a>, In EMSOFT 2010.  </li>
+   <li> Ashish Tiwari, "Bounded verification of adaptive flight control systems", Proc. AIAA Infotech@Aerospace, 2010. AIAA-2010-3362.  </li>
+   <li> With Luis Barguno, Guillem Godoy and Eduard Huntingford, "Termination of rewriting with right-flat rules modulo permutative theories", <a href="http://www.lmcs-online.org/ojs/viewarticle.php?id=634&layout=abstract"> Volume 6, Issue 3, Paper 8</a>, LMCS 2010.  </li>
+   <li> With Susmit Jha , <a href="http://research.microsoft.com/en-us/um/people/sumitg/">Sumit Gulwani</a>, and Sanjit Seshia.  <a href="http://portal.acm.org/citation.cfm?doid=1795194.1795198"> "Synthesizing Switching Logic for Safety and Dwell-Time Requirements"</a>, <a href="http://portal.acm.org/citation.cfm?id=1795194">ICCPS 2010</a>.  </li>
+   <li> With Susmit Jha, <a href="http://research.microsoft.com/en-us/um/people/sumitg/">Sumit Gulwani</a>, and Sanjit Seshia, <a href="http://www.eecs.berkeley.edu/~sseshia/pubs/b2hd-jha-icse10.html"> "Oracle-guided component-based program synthesis"</a>, ICSE 2010.  (<a href="https://conf.researchr.org/track/icse-2020/icse-2020-most-influential-paper-award">Most Influential Paper award</a>) </li>
+   <li> With Adria Gascon, Guillem Godoy, and Manfred Schmidt-Schauss, <a href="http://dl.acm.org/citation.cfm?id=1652228"> "Context unification with one context variable"</a>, Journal of Symbolic Computation 45(2010), pp 173-193.  </li>
+   <li> With Ankur Taly, "Deductive Verification of Continuous Dynamical Systems", In FSTTCS'09.  Click <a href="http://drops.dagstuhl.de/opus/ergebnis.php?suchart=teil&Lines_Displayed=10&sort=o.date_year+DESC%2C+o.title&suchfeld1=oa.person&suchwert1=Tiwari%2C+Ashish"> here for the paper </a>.  </li>
+   <li> With Guillem Godoy, <a href="papers/sas09.pdf"> "Invariant Checking for Programs with Procedure Calls."</a> In SAS'09.  </li>
+   <li> With Alessandro Abate and Shankar Sastry, <a href="http://dx.doi.org/10.1016/j.automatica.2009.02.028">"Box Invariance in biologically-inspired dynamical systems."</a> <a href="http://www.journals.elsevier.com/automatica">Automatica</a>:45(7). July 2009. pp. 1601-1610.  doi:10.1016/j.automatica.2009.02.028.  </li>
+   <li> Ashish Tiwari, "Formally analyzing adaptive flight control." In NSV II (co-located with CPSWeek 2009). </li>
+   <li> With Carles Creus, Guillem Godoy and Francesc Massanes, "Non-linear rewrite closure and weak normalization." In LICS'09.  </li>
+   <li> With Ankur Taly and <a href="http://research.microsoft.com/en-us/um/people/sumitg/">Sumit Gulwani</a>, <a href="html/vmcai09.html">"Synthesizing Switching Logic using Constraint Solving."</a> In VMCAI 2009.  </li>
+   <li> With Carolyn Talcott, <a href="html/cmsb08.html">"Analyzing a Discrete Model of Aplysia Central Pattern Generator"</a>, In <a href="http://wwwmosi.informatik.uni-rostock.de/cmsb08/">CMSB 2008</a>.  Final version of paper at Springer LNBI page: Click <a href="http://www.springeronline.com/978-3-540-88561-0">here</a> or <a href="http://link.springer.com/book/10.1007%2F978-3-540-88562-7">here</a>.  Download the <a href="html/sal/neuronsC.sal">sal model</a>.  </li>
+   <li> With <a href="http://research.microsoft.com/en-us/um/people/sumitg/">Sumit Gulwani</a>, <a href="papers/cav08.pdf">"Constraint-based Approach for Verification and Synthesis of Hybrid Systems"</a>, CAV 2008.  </li>
+   <li> Ashish Tiwari, <a href="http://www.csl.sri.com/~tiwari/papers/generating-box-invariants.pdf"> "Generating Box Invariants"</a>, In HSCC 2008.  </li>
+   <li> Ashish Tiwari, <a href="http://www.csl.sri.com/~tiwari/html/fmsd08.html"> "Abstractions for Hybrid Systems" </a>, In FMSD 2008.  </li>
+   <li> With S. Gulwani and Bill McCloskey, <a href="http://www.csl.sri.com/~tiwari/papers/quantified.pdf"> "Lifting Abstract Interpreters to Quantified Abstract Domains"</a>.  (Full version). In POPL 2008.  </li>
+   <li> With Alessandro Abate, Yu Bai, Nathalie Sznajder, and Carolyn Talcott.  <a href="http://www.csl.sri.com/~tiwari/html/bibe07.html">"Quantitative and Probabilitic Modeling in Pathway Logic"</a>.  In BIBE 2007. (Won the Best Student Paper Award) </li>
+   <li> With A. Abate and S. Sastry, <a href="http://www.csl.sri.com/~tiwari/papers/box_2.pdf">"Box invariance for biologically-inspired dynamical systems"</a>.  In CDC 2007.  </li>
+   <li> With S. Gulwani, <a href="http://www.csl.sri.com/~tiwari/html/cade07.html"> "Logical Interpretation: Static Program Analysis Using Theorem Proving"</a>.  In CADE-21, 2007. (Invited Paper) </li>
+   <li> With Guillem Godoy, <a href="http://www.csl.sri.com/~tiwari/papers/termination07.ps"> "Termination of rewriting with right-flat rules"</a>.  In Proc.  RTA 2007.  </li>
+   <li> With <a href="http://research.microsoft.com/en-us/um/people/sumitg/">Sumit Gulwani</a>, <a href="http://www.csl.sri.com/~tiwari/papers/ha.pdf"> Static Analysis of Heap Manipulating Low-level Software</a>(in pdf).  <a href="http://research.microsoft.com/en-us/um/people/sumitg/pubs/ha_cav07.ppt">slides</a>(in ppt).  In Proc. <a href="http://www.cav2007.org/">CAV 2007</a>.  <!--<font color="#ff0000">New!</font>--> </li>
+   <li> With C. Talcott, M. Knapp, P. Lincoln, and K. Laderoute, <a href="http://www.csl.sri.com/~tiwari/html/ab07.html">"Analyzing Pathways using SAT-based approaches"</a>.  In <a href="http://www.risc.uni-linz.ac.at/about/conferences/ab2007/">Algebraic Biology 2007</a>, July 2-4, 2007, Hagenberg, Austria.  </li>
+   <li> With <a href="http://research.microsoft.com/en-us/um/people/sumitg/">Sumit Gulwani</a>, <a href="http://www.csl.sri.com/~tiwari/html/esop07.html"> Computing Procedure Summaries for Interprocedural Analysis"</a>.  In ESOP 2007.</li>
+   <li> With <a href="http://research.microsoft.com/en-us/um/people/sumitg/">Sumit Gulwani</a>, <a href="http://www.csl.sri.com/~tiwari/papers/vmcai07.ps"> "Assertion checking unified"</a>(in ps).  In VMCAI 2007.  Preliminary version also available as MSR-TR-2006-99.  </li>
+   <li> With Rajesh Kumar and Bruce Krogh, <a href="http://www.csl.sri.com/~tiwari/papers/rk_mvlpa.pdf"> "EOLC: Efficiently modeling inconsistency for commonsense reasoning"</a>.  In <a href="http://www.easychair.org/FLoC-06/MVLPA.html">MVLPA 2006 </a>.  </li>
+   <li> With Alessandro Abate, <a href="http://www.csl.sri.com/~tiwari/html/adhs06.html">"Box invariance of Hybrid and Switched Systems"</a>, In <a href="http://www.diee.unica.it/adhs06/">2nd IFAC Conference on Analysis and Design of Hybrid Systems, ADHS 2006</a>.  </li>
+   <li> With S. Gulwani, <a href="html/pldi06.html"> "Combining abstract interpreters"</a>.  PLDI 2006. This paper introduces the logical product of two logical lattices. It then shows that abstract interpreters over the individual logical lattices can be combined to yield the most precise abstract interpreter over the logical product under certain conditions on the logical theories defining the logical lattices. The combination result (and the conditions) are inspired by the Nelson-Oppen combination result for deciding satisfiability in the disjoint union of stably-infinite theories.  </li>
+   <li> With S. Gulwani, <a href="html/esop06.html"> "Assertion Checking in the Combined Abstraction of Linear Arithmetic and Uninterpreted Functions" </a>. ESOP 2006. This paper shows that assertion checking over the combination of two logical lattices can be hard, even when it is PTime over the individual lattices.  </li>
+   <li> With Linda Briesemeister and Phil A. Porras, <a href="http://www.csl.sri.com/papers/sri-csl-2005-03/"> "Model checking of worm quarantine and counter-quarantine under a group defense"</a>, SRI Technical Report, Oct 2005.  </li>
+   <li> With G. Godoy, <a href="html/csl05a.html"> "Confluence of shallow right-linear rewrite systems"</a>.  In CSL 2005.  We show that the following problem is surprisingly decidable: given a shallow and right-linear rewrite system, determine if it is confluent.  (Preliminary version, to be revised) </li>
+   <li> A. Tiwari, <a href="html/csl05b.html"> "An algebraic approach to the satisfiability of nonlinear constraints"</a>.  In CSL 2005.  This paper presents a pragmatic and powerful sound and refutationally complete method for testing satisfiability of nonlinear constraints over the reals.  (Preliminary version, to be revised) </li>
+   <li> With Guillem Godoy, <a href="html/cade05.html"> Termination of Rewrite Systems with Shallow Right-Linear, Collapsing, and Right-Ground Rules </a>. In CADE 2005.  (Preliminary version, to be revised) </li>
+   <li> With E. Rodriguez-Carbonell, <a href="http://www.csl.sri.com/users/tiwari/html/hscc05.html"> "Generating Polynomial Invariants for Hybrid Systems", </a> In Hybrid Systems: Computation and Control 2005.  </li>
+   <li> With S. Gulwani and G. Necula, <a href="http://link.springer.com/chapter/10.1007%2F978-3-540-30538-5_26"> "Join Algorithms for the theory of uninterpreted functions", </a> In K. Lodaya and M. Mahajan (eds.) FSTTCS 2004, Vol 3328 of LNCS, p.311-323, 2004.  In <a href="http://www.csl.sri.com/~tiwari/papers/fsttcs04.ps">postscript</a>.  </li>
+   <li> A. Tiwari, <a href="http://www.csl.sri.com/users/tiwari/html/cav04.html"> "Termination of linear programs" </a>. In CAV 2004.  This paper shows decidability of termination for a class of linear loop programs.  </li>
+   <li> With Guillem Godoy, <a href="http://www.csl.sri.com/users/tiwari/html/ijcar04.html"> "Deciding fundamental properties of right-ground or right-variable systems by rewrite closure"</a>.  In IJCAR 2004.  This paper shows decidability of properties such as reachability, joinability, confluence, and termination for TRSs containing right-ground or collapsing rules.  </li>
+   <li> With  Leonardo de Moura, Sam Owre, Harald Ruess, John Rushby, N. Shankar, and Maria Sorea, <a href="http://www.csl.sri.com/~rushby/abstracts/sal-cav04"> SAL 2 </a>. In CAV 2004.  </li>
+   <li> With Guillem Godoy and Rakesh Verma, <a href="http://www.csl.sri.com/users/tiwari/html/aaecc.html"> "Confluence characterization using rewrite closure with application to right ground systems"</a>.  This paper presents a solution of Problem #63 from the <A HREF="http://www.win.tue.nl/rtaloop/">RTA list of open problems</A>.  In Applicable Algebra in Engineering, Communication and Computing, AAECC 15(1):13-36 (2004), Springer.  <a href="http://rd.springer.com/journal/200/15/1/page/1">Link to paper on journal website</a>.  </li>
+   <li> With P. Lincoln, "<A HREF="http://www.csl.sri.com/users/tiwari/html/hscc04b.html"> "Symbolic systems biology: Hybrid modeling and analysis of biological networks" </a>, In HSCC 2004.  </li>
+   <li> With N. Berregeb and R. Robbana, "Toward Automatic Proofs of Observational Properties", Discrete Mathematics and Theoretical Computer Science 6(2), 143--162, 2004.  </li>
+   <li> With G. Khanna, "<A HREF="http://www.csl.sri.com/users/tiwari/html/hscc04a.html"> Nonlinear Systems: Approximating Reach Sets </A>", In HSCC 2004.  </li>
+   <li> With Guillem Godoy and Rakesh Verma, "Deciding confluence of certain term rewriting systems in polynomial time", <a href="http://www.sciencedirect.com/science/journal/01680072"> Annals of Pure and Applied Logic </a>, APAL 130(1-3):33-59, December 2004.  </li>
+   <li> Ashish Tiwari, "<A HREF="http://www.csl.sri.com/~tiwari/html/pdpar03.html">Abstraction based theorem proving: An example from the theory of reals</A>", In the proceedings of the <A HREF="http://www.loria.fr/~ranise/pdpar03/">PDPAR 2003</A> workshop, colocated with <A HREF="http://www.cade-19.info/"> CADE 2003 </A>.  </li>
+   <li> Ashish Tiwari, "<A HREF="http://www.csl.sri.com/~tiwari/html/hscc03-1.html">Approximate Reachability for Linear Systems</A>", In the Proceedings of Hybrid Systems: Computation and Control, <A HREF="http://www-hscc03.imag.fr/">HSCC 2003</A>.  </li>
+   <li> With Ronojoy Ghosh and Claire Tomlin, "<A HREF="http://www.csl.sri.com/~tiwari/html/hscc03-2.html">Automated Symbolic Reachability Analysis with Application to Delta-Notch Signaling Automata</A>", In the Proceedings of Hybrid Systems: Computation and Control, <A HREF="http://www-hscc03.imag.fr/">HSCC 2003</A>.  </li>
+   <li> With <A HREF="http://www.lsi.upc.edu/~ggodoy/">Guillem Godoy</A> and <A HREF="http://www.cs.uh.edu/~rmverma/">Rakesh Verma</A>, "<A HREF="html/stacs2003.html">On the confluence of linear shallow term rewrite systems</A>", In STACS 2003, 20th International Symposium on Theoretical Aspects of Computer Science, Feb 27--Mar 01, 2003.  </li>
+   <li> With N. Shankar and J. Rushby, "<A HREF="http://www.csl.sri.com/~tiwari/html/ieee.html">Invisible formal methods for embedded control systems</A>", In Proc of the IEEE, Special issue on Embedded Systems, Jan 2003.  </li>
+   <li> With <A HREF="http://www.lsi.upc.edu/~ggodoy/">Guillem Godoy</A> and <A HREF="http://www.lsi.upc.edu/~roberto/">Robert Nieuwenhuis</A>, "<A HREF="http://www.lsi.upc.edu/~roberto/papers.html">Classes of Term Rewrite Systems with Polynomial Confluence Problems</A>", (journal article) In <A HREF="http://www.acm.org/tocl"> TOCL </A>, Volume 5, Number 2 (April 2004).  <a href="http://www.csl.sri.com/~tiwari/papers/tocl04.pdf">pdf</a>.  </li>
+   <li> Ashish Tiwari, <A HREF="http://www.csl.sri.com/~tiwari/html/lics02.html"> "Polynomial Time Algorithms for Deciding Confluence of Certain Term Rewrite Systems" </A>, In IEEE Symposium on Logic in Computer Science, LICS 2002.  This paper presents a solution of Problem #12 from the <A HREF="http://www.win.tue.nl/rtaloop/">RTA list of open problems</A>.  </li>
+   <li> With G. Khanna, <A HREF="http://www.csl.sri.com/~tiwari/html/hscc02.html"> "Series of Abstractions for Hybrid Automata" </A>, In Hybrid Systems: Computation and Control, HSCC 2002.  </li>
+   <li> With Leo Bachmair and Laurent Vigneron, <A HREF="http://www.csl.sri.com/~tiwari/html/jar00.html"> "Abstract Congruence Closure" </A>, J. of Automated Reasoning 31(2), 2003, pp. 129--168, Kluwer Academic Publishers.  </li>
+   <li> Ashish Tiwari, <A HREF="http://www.csl.sri.com/~tiwari/html/fsttcs01.html"> "Rewrite Closures for Ground and Cancellative AC Theories" </A>, In FST&TCS 2001, LNCS 2245.  </li>
+   <li> With Harald Ruess, Hassen Saidi and N. Shankar, <A HREF="http://www.csl.sri.com/~tiwari/html/tacas01.html"> "Automatic Generation of Invariants" </A>, In <A HREF="http://www.disi.unige.it/etaps2001/"> TACAS 2001 - Tools and Algorithms for the Construction and Analysis of Systems.  </A> </li>
+   <li> S. Bensalem, et. al., <A HREF="http://www.csl.sri.com/~tiwari/html/lfmw00.html"> "An overview of SAL", </A> In Langley Workshop on Formal Methods, LFMW 2000.  </li>
+   <li> With Leo Bachmair, <A HREF="http://www.csl.sri.com/~tiwari/html/cade00-CC.html"> "Abstract Congruence Closure and Specializations" </A>, 17th Intl Conference on Automated Deduction, <A HREF="http://www.cs.cmu.edu/~cade/"> CADE 2000 </A>.  </li>
+   <li> With Leo Bachmair and Harald Ruess, <A HREF="http://www.csl.sri.com/~tiwari/html/cade00-REU.html"> "Rigid E-Unification Revisited" </A>, 17th Intl Conference on Automated Deduction, <A HREF="http://www.cs.cmu.edu/~cade/"> CADE 2000 </A>.  </li>
+   <li> With R. K. Ahuja and James B. Orlin, <a href="http://dl.acm.org/citation.cfm?id=346537"> "A Greedy Genetic Algorithm for the Quadratic Assignment Problem", </A> In Computers and Operations Research 27 (10), Sept. 2000, pp. 917--934.  See also working paper, Sloan School of Management, WP\#3826-95, June 1995.  </li>
+   <li> With Leo Bachmair, I.V. Ramakrishnan, and L. Vigneron, <A HREF="http://www.csl.sri.com/~tiwari/html/frocos00.html"> "Congruence Closure modulo Associativity and Commutativity", </A> Workshop on Frontiers of Combining Systems, FroCos 2000, LNAI 1794.  </li>
+   <li> With Leo Bachmair, C. Ramakrishnan and I.V. Ramakrishnan, <A HREF="http://www.csl.sri.com/~tiwari/html/rta99.html"> "Normalization via Rewrite Closures" </A>, Rewriting Techniques and Applications, Proceedings of the 10th RTA-1999.  </li>
+   <li> With Leo Bachmair, <A HREF="http://www.csl.sri.com/~tiwari/html/rta97.html"> "D-bases for Polynomial Ideals over Commutative Noetherian Rings" </A>, Rewriting Techniques and Applications, Proceedings of the <A HREF="http://rewriting.loria.fr/rta/documents/RTA-1997_Contents.html"> 8th RTA-1997 </A>, pp. 113-127.</li>
+   </ul>
+  </div> 
+  
+  <H3 style="display:run-in"> <a name="talks"> Talks/Conference Tutorials </a></H3>
+   <ul>
+    <li> <a href="http://www.csl.sri.com/~tiwari/icse-full.mp4">ICSE Most Influential Paper Award (2020)</a> </li>
+    <li> <a href="http://fm.csl.sri.com/SSFT17/">7th Summer School on Formal Techniques: May 2017 in Menlo College, Atherton, CA</a> </li>
+   </ul> 
+   <br> Slides for my lectures: 
+    <a href="slides/model_checking_problem.pdf">Model Checking: Problem Definition</a>,
+    <a href="slides/model_checking_example.pdf">Model Checking: Example </a>,
+    <a href="slides/hybrid_systems.pdf">Hybrid Systems: Definition</a>,
+    <a href="slides/model_checking_techniques.pdf">Model Checking: Techniques for Hybrid Systems</a>.
+   Tools: 
+    <a href="http://sal.csl.sri.com">SAL</a>,
+    <a href="hybridsal/index.html">HybridSAL qualitative abstractor</a>, and
+    <a href="relational-abstraction/index.html">HybridSAL relational abstractor</a>.
+   Lab Exercise: <a href="exercise.txt">exercise.txt</a>, solution <a href="collatz.sal">collatz.sal</a>, <a href="slides/puzzle.sal">puzzle.sal</a> or <a href="slides/puzzleNew.sal">puzzleNew.sal</a>, <a href="slides/robotNew.hsal">robotNew.hsal</a>
+   <br>
+    <div id='talks1' style="cursor:pointer;display:inline" onclick="toggleDisplay('talks1');toggleDisplay('talks2');">Click here to display list.</div>
+    <div id='talks2' style="cursor:pointer;display:none" onclick="toggleDisplay('talks1');toggleDisplay('talks2');">Click to retract list.
+   <ul>
+    <li> <a href="slides/lics2011.pdf"> Invited talk</a> at LICS 2011, Fields Institute, Toronto, Jun 21, 2011.  <!-- <font color="#ff0000">New!</font> </li> --> </li>
+    <li> <a href="slides/rta2011.pdf"> Invited talk</a> at <a href="http://www.rdp2011.uns.ac.rs/rta/"> RTA 2011</a>, Novi Sad, Serbia, May 31, 2011.  <!-- <font color="#ff0000">New!</font> </li> --> </li>
+    <li> <a href="slides/msr2011.pdf"> Talk</a> at MSR, Redmond, Mar 25, 2011.  </li>
+    <li> <a href="slides/issac2011.pdf"> Talk</a> at ISSAC 2011, San Jose, June 11, 2011.  </li>
+    <li> <a href="slides/issac10.pdf"> Invited talk</a> at <a href="http://www.issac-conference.org/2011/"> ISSAC 2011</a>, Munich, July 26, 2010. </li> 
+    <li> Talk at FroCoS'09 </li>
+    <li> Tutorial at <a href="http://www.risc.uni-linz.ac.at/about/conferences/ab2008/">AB 2008</a>, Hagenberg, Austria, July 31 2008.  </li>
+    <li> Talk at session on <a href="http://www.risc.uni-linz.ac.at/about/conferences/aca2008/?content=sessions#11">"Symbolic Computation and Deduction in System Design and Verification"</a> of ACA 2008 (July 27-30) </li>
+    <li> Stochastic modeling and analysis of biological networks, <a href="http://www.csl.sri.com/~tiwari/slides/biosecurity.pdf">Workshop on Biosecurity (in pdf)</a>, May 8, 2007, Baltimore.  </li>
+    <li> Combining abstract interpreters, <a href="http://www.csl.sri.com/~tiwari/slides/combining-ai.pdf"> Stanford talk (in pdf)</a>.  </li>
+    <li> With Harald Ruess and N. Shankar, <A HREF="http://www.csl.sri.com/~tiwari/html/cade02tut.html">On Shostak's Combination of Decision Procedures</A>. Tutorial at CADE 2002, Copenhagen. Click on the above link for slides.  </li>
+    <li> Decision procedures in automated deduction, Dissertation <A HREF="http://www.csl.sri.com/~tiwari/papers/thesis.pdf"> pdf </A>, Department of Computer Science, State University of New York at Stony Brook, 2000. Advisor <A HREF="http://www.cs.sunysb.edu/~leo/"> Prof. Leo Bachmair</A>.  </li>
+    <li> Decision procedures summer school: Aug 9-11, Stanford.  </li>
+    <li> <a href="slides/adaptive-flight-control.pdf">Talk (pdf)</a> at <a href="http://theory.stanford.edu/~srirams/nsv2/index.html">Numerical abstractions for software verification 2</a>, affiliated to CPSWeek (Apr 2009).  </li>
+    <li> <a href="slides/nsv08.pdf">Talk (pdf)</a> at <a href="http://theory.stanford.edu/~srirams/nsv/index.html">Numerical abstractions for software verification</a>, affiliated to <a href="http://www.princeton.edu/cav2008/">CAV 2008</a> (July 8, 2008).  </li>
+    <li> <a href="slides/cade-21.pdf">Invited Talk</a> at CADE-21, 2007.  </li>
+    <li> <a href="slides/lsb-talk.pdf"> Hybrid modeling and analysis of biological networks</a>.  Talk at the Workshop on Logic in Systems Biology, LSB, co-located with FLoC 2006, Aug 15, 2006.  </li>
+    <li> Hybrid modeling and analysis of genetic networks. Talk at Univ of Notre Dame, Feb 27, 2004.  </li>
+    <li> <A HREF="http://www.csl.sri.com/~tiwari/slides/cmu-talk.ps"> "Symbolic techniques for verification of hybrid systems" (ps) </A>, Talk at CMU, Sep 30, 2003.  (HybridAbstraction + Composition + Systems Biology) </li>
+    <li> <A HREF="http://www.csl.sri.com/~tiwari/slides/biospice-dc.pdf"> BioSpice DC Talk (pdf)</A>.  <A HREF="http://www.csl.sri.com/~tiwari/slides/dagstuhl05.pdf"> Dagstuhl 2005 Talk (assertion checking and unification) (pdf)</A>.  </li>
+    <li> <A HREF="http://www.csl.sri.com/~tiwari/nasa-talk.ps"> "Symbolic methods for verification of hybrid systems" (ps) </A>, Presentation at the NASA Ames Research Center, Mountain View, CA, June 17, 2003.  Talks with the only slightly different content were also given at Dagstuhl Seminar on Theorem Proving and Infinite State Model-Checking (April 21--25, 2003), and MPI Saarbrucken (April 30--May 2, 2003).  </li>
+    <li> <A HREF="http://www.csl.sri.com/~tiwari/slides/upenn-talk.ps"> "Symbolic methods for verification of hybrid systems" (ps) </A>, Presentation at the Hybrid Systems Seminar series, University of Pennsylvania, Philadelphia, Feb 28, 2003.  </li>
+    <li> <A HREF="http://www.csl.sri.com/~tiwari/slides/combining-dp-school.pdf"> "Combining Decision Procedures" (pdf) </A>, Presentation at the Stanford Logic Seminar, Oct 15, 2002.  Also available in <A HREF="http://www.csl.sri.com/~tiwari/slides/combining-dp-school.ps"> in postscript </A>.  </li>
+    <li> With Pat Lincoln and John Rushby, <A HREF="http://www.csl.sri.com/~tiwari/mobies-ny.pdf"> "Formal Composition for Time-Triggered Systems" </A>, Presentation for the MoBIES PI meeting at New York on July 25th.  </li>
+    <li> A. Tiwari, <A HREF="http://www.csl.sri.com/~tiwari/slides/iowa-talk.ps"> "Uniform description of efficient decision procedures using extended signatures" </A>, MacLean Hall, Computer Science Department, University of Iowa, Iowa City, Mar 1, 2002.  <A HREF="http://www.csl.sri.com/~tiwari/slides/iowa-talk1.pdf"> In pdf </A> </li>
+    <li> A. Tiwari, <A HREF="http://www.csl.sri.com/~tiwari/slides/berkeley-talk.ps"> "Formal Methods for Analysis of Hybrid Systems" </A>, Room 339, Cory Hall, UC Berkeley, Feb 11, 2002.  </li>
+    <li> A. Tiwari, <A HREF="http://www.csl.sri.com/~tiwari/slides/stanford-talk.ps"> "Formal Methods for Analysis of Hybrid Systems" </A>, Durand 026, Stanford University, Dec 07, 2001.  </li>
+    <li> A. Tiwari, <A HREF="http://www.csl.sri.com/~tiwari/mobies-sep01.pdf"> "Formal Composition for Time-Triggered Systems" </A>, Presented at MoBIES ESWG meeting at Dearbon.  </li>
+    <li> Ashish Tiwari, <A HREF="http://www.csl.sri.com/~tiwari/dagstuhl.text"> "Abstract Congruence Closure and Applications", </A> Dagstuhl seminar on Deduction, Seminar No. 99091, Report No. 232, U. Furbach (Koblenz), H. Ganzinger (MPI-Saarbrücken), D. Kapur (Albany),  28 Feb--5 March 1999.  </li>
+    <li> Ashish Tiwari, "Grobner bases for polynomial ideals over commutative Noetherian rings", Talk given at Chennai Mathematical Institute, Jan. 1999.  </li>
+    <li> Ashish Tiwari, "Decision Procedures in Automated Deduction", Preliminary Examination Report, PhD Proposal, SUNY at Stony Brook, Nov 1998. </li> 
+   </ul>
+  </div> 
+                                                                                                                        <H3> Softwares/ Other Artifacts </H3>
+                                                                                                                        <div id='sw1' style="cursor:pointer;display:inline" onclick="toggleDisplay('sw1');toggleDisplay('sw2');">Click here to display software list.</div>
+                                                                                                                        <div id='sw2' style="cursor:pointer;display:none" onclick="toggleDisplay('sw1');toggleDisplay('sw2');">Click to retract software list.
+   <ul> 
+       <li> <a href="softwares/nl_eigen_solver/">Nonlinear Eigen Solver</a> </li>
+       <li> <a href="softwares/synth_distributed/">Synthesis of fault-tolerant distributed algorithms</a>: Example SAL model and QBF formula(s) </li>
+       <li> <a href="hybridsal/index.html">HybridSal</a></li> 
+       <li> <a href="relational-abstraction/index.html">HybridSal Relational Abstractor</a> <font color="#ff0000">New!</font> </li> 
+       <li> <a href="softwares/synthesis_for_polynomial_lasso_programs_source.zip">synthesis_for_polynomial_lasso_programs.zip</a></li> 
+       <li> <a href="http://www.csl.sri.com/users/bruno/vvfcs.html">Draper clock sync model in SAL</a> </li>
+       <li> <a href="nonlinear-solver.tgz">Heuristic Nonlinear Solver</a></li> 
+       <li> Documentation for <A HREF="http://www.csl.sri.com/~tiwari/HybridSalDoc.ps"> HybridSal </A>.  <A HREF="http://www.csl.sri.com/~tiwari/SBML2SAL.tgz"> SBML2HybridSal </A>. </li> 
+       <li> Ashish Tiwari and Laurent Vigneron, <A HREF="http://www.csl.sri.com/~tiwari/abstractCC.tar.gz"> Implementation of Abstract Congruence Closure with randomly generated CC problem instances (gzipped tar file) </A>, see the CADE 2000 paper for details.  </li> 
+       <li> Ashish Tiwari, R. K. Ahuja, and J. Orlin, <A HREF="http://www.csl.sri.com/~tiwari/GA.tar"> GA source code (tar file) </A>, see the QAP paper for details.  Click <A HREF="http://www.csl.sri.com/~tiwari/GA-Data.tar"> here (tar file) </A> for the benchmark data for QAP.  </li> 
+       <li> Ashish Tiwari, <A HREF="http://www.csl.sri.com/~tiwari/qepcad.html"> Linking QEPCAD with PVS </A>.</li> 
+   </ul> 
+  </div>
+                                                                                                                        <H3> Other Papers/Reports </H3>
+                                                                                                                        <div id='rest1' style="cursor:pointer;display:inline" onclick="toggleDisplay('rest1');toggleDisplay('rest2');">Click here to display list of other papers/reports.</div>
+                                                                                                                        <div id='rest2' style="cursor:pointer;display:none" onclick="toggleDisplay('rest1');toggleDisplay('rest2');">Click to retract list of other papers/reports.
+   <ul>
+       <li> With <a href="http://research.microsoft.com/en-us/um/people/sumitg/">Sumit Gulwani</a>, <a href="http://www.csl.sri.com/~tiwari/papers/MSR-TR-2006-99.pdf"> "Assertion checking unified"</a>(in pdf). Microsoft Research Technical Report MSR-TR-2006-99.  </li>
+       <li> A. Tiwari, <A HREF="http://www.csl.sri.com/~tiwari/html/stateflow.html"> Formal Semantics and Analysis Methods for Simulink Stateflow Models </A>.  </li>
+       <li> Leo Bachmair and Ashish Tiwari, <A HREF="http://www.csl.sri.com/~tiwari/html/unif2000.html"> "Congruence Closure and Syntactic Unification", </A> In <A HREF="http://www.cs.cmu.edu/~unif/"> 14th Intl Workshop on Unification, UNIF 2000 </A>.  </li>
+       <li> Ashish Tiwari, <A HREF="http://www.csl.sri.com/~tiwari/project-635.html"> "Adding BDD's to the Concurrency Factory's Local Model Checker", </A> CSE 635 Asynchronous Systems, Project Report, Spring 1997.  </li>
+       <li> Zhong Li and Ashish Tiwari, <A HREF="http://www.csl.sri.com/~tiwari/addition-chain.ps.gz"> "Addition Chain Heuristics/RSA Public Key Cryptosystem", </A> CSE 502 Computer Architecture, Project Report, Spring 1996.  </li>
+       <li> Ashish Tiwari, <A HREF="http://www.csl.sri.com/~tiwari/cs539.ps.gz"> "Identifying Mathematical and Logical Sequences", </A> CSE 539 Expert Systems, Project Report, Spring 1996.  </li>
+       <li> Ashish Tiwari, <A HREF="http://www.csl.sri.com/~tiwari/group-testing.ps.gz"> "Group Testing", (.ps.Z) </A> CSE 648 Advanced Algorithms, Project Report, Fall 1995.  </li>
+       <li> Ashish Tiwari, <A HREF="http://www.csl.sri.com/~tiwari/3Dsweep.ps.gz"> "Sweeping a 3-D Tetrahedral Complex", </A> CSE 528 Computer Graphics, Project Report, Fall 1995. Appeared as part of "Fast Rendering of Irregular Grids", by Claudio T.Silva, J.S.B. Mitchell and Arie E. Kaufman, ACM/IEEE Volume Visualization Symposium 1996, pp. 15--22.</li>
+   </ul>
+  </div>
+  
+  <H3> Teaching </H3>
+   <div id='teach1' style="cursor:pointer;display:inline" onclick="toggleDisplay('teach1');toggleDisplay('teach2');">Click here to display list.</div>
+   <div id='teach2' style="cursor:pointer;display:none" onclick="toggleDisplay('teach1');toggleDisplay('teach2');">Click to retract list.
+   <ul>
+    <li> Fall 2003: <A HREF="http://www.csl.sri.com/users/shankar/LEP.html"> CS359: Little Engines of Proof</A>, Stanford University.
+    <li> <!-- <A HREF="http://www.cs.sunysb.edu/~astiwari/cs303/gaann301.html"> -->
+    Automata Theory, Summer (1997) term special couse for incoming graduate students, SUNY-Stony Brook.
+    <li> Teaching Assistant for CSE 113 "Foundations of Computer Science I", Fall 1995, Instructor: Prof. P.B.Henderson.  </li>
+    <li> Teaching Assistant for CSE 213, "Foundations of Computer Science II", Spring 1996, Instructor: <A HREF="http://www.cs.sunysb.edu/~leo/"> Prof. Leo Bachmair</A>.  </li>
+    <li> Teaching Assistant for CSE 506, "Operating Systems", Spring 1996, Instructor: <A HREF="http://www.cs.sunysb.edu/~stark/"> Prof. Gene Stark</A>.
+   </ul>
+  </div>
+ 
+ <H3> Miscellaneous: Old Links </H3>
+  <ul>
+      <li> Program co-chair: <a href="http://www.uc.pt/en/congressos/ijcar2016/">IJCAR 2016</a>: Second <a href="http://www.csl.sri.com/~tiwari/ijcar2016/CFP_Second.txt">CFP</a>.  List of <a href="ijcar2016/accepted.html">accepted papers</a>.  Program <a href="ijcar2016/program.txt">schedule</a>.  Program <a href="ijcar2016/program.pdf">schedule in pdf</a>.  <a href="http://www.csl.sri.com/~tiwari/ijcar2016/cfp.txt">FIRST CFP</a>.  <a href="http://www.csl.sri.com/~tiwari/ijcar2016/cfp.txt">Prelim CFP</a>.  </li>
+      <li> Program co-chair: <a href="http://www.csl.sri.com/users/tiwari/iwc2016">Intl. Workshop on Confluence, IWC 2016 </a>, Sep 4-10, 2016, Obergurgl, Austria.  </li>
+      <li> Program co-chair:  <a href="http://easychair.org/publications/volume/SNR_2015">SNR 2015. Easychair Proceedings</a> </li>
+      <li> <A href="http://www.csl.sri.com/~tiwari/personal.html"> Personal Page</A>, for photographs.  </li>
+      <li> <a href="https://www.youtube.com/results?search_query=mukul+shivputra">Mukul Shivputra</a>.  </li>
+      <li> <a href="http://fm.csl.sri.com/SSFT15/">Fifth Summer School on Formal Techniques: 5/19 -- 5/23 in Menlo College, Atherton, CA</a> </li>
+      <li> <a name="pastpc"> Past PC participation:</a>
+       <div id='pastpc1' style="cursor:pointer;display:inline" onclick="toggleDisplay('pastpc1');toggleDisplay('pastpc2');">Click here to display list.</div>
+       <div id='pastpc2' style="cursor:pointer;display:none" onclick="toggleDisplay('pastpc1');toggleDisplay('pastpc2');">Click to retract list.
+       <ul>
+        <li> CAV 2020, ATVA 2019, HSCC 2019 </li>
+        <li> <a href="http://www.ijcar2018.org/">IJCAR 2018</a>, July 14-17, 2018, Oxford, UK</li>
+        <li> <a href="http://www.cs.ox.ac.uk/conferences/ADHS18">ADHS 2018</a>, July 11-13, 2018, Oxford, UK</li>
+        <li> <a href="http://frocos2017.cic.unb.br">FroCoS 2017</a>, Sep 25-29, Brasilia, Brazil</li>
+        <li> <a href="http://www.cade-26.info">CADE 2017</a>, Aug 6-11, Gothenburg, Sweden</li>
+        <li> <a href="http://lpar-21.info">LPAR-21</a>, May 7-12, Maun, Botswana</li>
+        <li> <a href="http://www.iarcs.org.in/atva2017">ATVA 2017</a>, Oct 3-6, Pune, India. Submission: 21 Apr </li>
+        <li> <a href="http://hscc2017.ece.illinois.edu">HSCC 2017</a>, Apr 18-20, Pittsburgh, PA </li>
+        <li> <a href="http://www.fsttcs.org">FSTTCS 2016</a>, Dec 13-15, Chennia, India</li>
+        <li> <a href="http://snrworkshop.github.io">Intl. Workshop on Symbolic and Numerical Methods for Reachability, SNR 2016 </a>, Apr 11, 2016, Vienna, Austria.
+        <li> <a href="http://formal.epfl.ch/synt/">SYNT 2016: 5th Intl workshop on synthesis, Jul 17, Toronto</a>.
+        <li> <a href="http://conf.researchr.org/home/POPL-2016">POPL 2016</a></li>
+        <li> <a href="http://snrworkshop.github.io">Intl. Workshop on Symbolic and Numerical Methods for Reachability, SNR 2015 </a> (co-chair), July 19, 2015, San Francisco.
+        <li> <a href="http://www.csl.sri.com/users/tiwari/iwc2015">Intl. Workshop on Confluence, IWC 2015 </a> (co-chair), Aug 2, 2015, Berlin.
+        <li> <a href="http://formats2015.unifi.it/">FORMATS 2015</a>; Submission deadline Apr 20/27; Sep2-4, 2015, Madrid.
+        <li> <a href="http://adhs15.gatech.edu">ADHS</a>, Oct 14-16, 2015, Georgia Tech, Atlanta.
+        <li> <a href="http://srds2015.cs.mcgill.ca/">SRDS 2015</a>
+        <li> SynCoP 2015, workshop on synthesis of continuous parameters, colocated with ETAPS 2015; next edition of <a href="http://lipn.univ-paris13.fr/SynCoP2014/">SynCoP 2014</a>
+        <li> <a href="http://www.etaps.org/index.php/2015/fossacs">FoSSaCS 2015</a>, Apr 11-18, 2015, London, UK.
+        <li> <a href="http://iccps.acm.org/2015/">ICCPS 2015</a>, Apr 14-16, 2015, CPSWeek, Seattle 
+        <li> <a href="http://www.hi-cons.org/"> HiCoNS 2014</a> (part of CPSweek 2014).
+        <li> CADE 2013
+        <li> <a href="http://frocos2013.loria.fr">FroCoS 2013</a>
+        <li> FOSSACS 2013
+        <li> <a href="http://formats2011.cs.aau.dk/">FORMATS 2011</a>
+        <li> <a href="http://www.fsttcs.org/"> FSTTCS 2011 </a> 
+        <li> <a href="http://www.cse.psu.edu/popl/12/">POPL 2012</a> (ERC)
+        <li> HSCC 2012, HSCC 2013 (mid Apr)
+        <li> <a href="http://rta2012.trs.cm.is.nagoya-u.ac.jp/"> RTA 2012 </a>:
+       </ul>
+       <ul>
+        <li> Call for papers <a href="cfp_rta2012.pdf">in pdf</a> [ Updated: Dec 19, 2011 ].
+        <li> Call for papers <a href="cfp_rta2012.txt">in text</a> [ Updated: Dec 19, 2011 ].
+       </ul>
+      <li> Co-organized <a href="http://research.microsoft.com/en-us/events/tptpa2011/default.aspx">
+       TPTPA: Theorem proving tools in program analysis</a>: Tutorial on theorem proving
+       techniques and tools, Co-located with POPL 2011 in Austin, Texas.
+      <li> Steering Committee Member and Publicity Chair for 
+       <a href="http://rewriting.loria.fr">RTA</a> (2005-2008).
+      <li> <a href="http://www.cs.utah.edu/events/conferences/cav2011/"> CAV 2011 </a> (Jan14-Mar19-Jul16-20)
+      <li> <a href="http://www.issac-conference.org/2011/"> ISSAC 2011 </a> (Jan 8/14-Mar 4-Jun 8-11),
+      part of <a href="http://fcrc.acm.org/"> FCRC </a>, Jun 4-11, San Jose.
+      <li> <a href="http://www.ijcar.org"> IJCAR 2010 </a>, part of 
+      <a href="http://www.floc-conference.org"> FLoC 2010 </a>. Deadline: Jan 15/22, 2010
+      <li> <a href="http://www.lpar.net/lpar-16/"> LPAR 2010 </a>
+      <li> <a href="http://www.macs.hw.ac.uk/vstte10/"> VSTTE 2010 </a>
+      <li> HSCC 2009,2011. 
+      <li> <a href="http://rdp09.cic.unb.br/rta.html">RTA 2009 </a>
+      <li> Algebraic Biology 2009 was cancelled.
+      <li> <a href="http://www.mpi-inf.mpg.de/~sofronie/addct09/">ADDCT 2009</a>, Montreal, Canada, Aug 2009. (Program co-chair). Paper deadline May 1.
+      <li> LPAR 2008, CMU Campus, Qatar.
+      <li> <a href="http://www.mpi-inf.mpg.de/~sofronie/cedar08.html">CEDAR 2008</a>(19May)
+      <li> LICS 2008, Pittsburgh
+      <li> <a href="http://www.ijcar.org/2008/">IJCAR 2008</a>, Sydney, 2008.
+      <li> <a href="http://www.risc.uni-linz.ac.at/about/conferences/ab2008/">AB 2008</a>, Hagenberg, Austria, July 31-Aug 2, 2008.
+      <li> <a href="http://www.mpi-inf.mpg.de/~sofronie/addct07.html">ADDCT 2007</a>, Bremen, Germany, July 15, 2007. (Program co-chair)
+      <li> CSL 2007, Lausanne, Sept 11-15, 2007.
+      <li> <a href="http://www.cav2007.org/">CAV 2007</a>, Berlin, July 3-7, 2007.
+      <li> <a href="http://www.fsttcs.org/">FSTTCS 2007</a>, Delhi, Dec 2007.
+      <li> <a href="http://www.lsi.upc.edu/~oliveras/smt07/">SMT 2007</a>, Berlin, July 1-2, 2007.
+      <li> <a href="http://www.risc.uni-linz.ac.at/about/conferences/ab2007/">Algebraic Biology 2007</a>, July 2-4, 2007, Hagenberg, Austria.
+      <li> HSCC 2006: <A HREF="http://hscc06.csl.sri.com/"> Hybrid Systems: Computation and Control</A>, Mar 29--31, Santa Barbara (Program Chair). 
+      <li>
+      <A HREF="http://rta06.csl.sri.com/"> RTA 2006: Rewriting Techniques and Applications</A>, Aug 12-15, 2006, Seattle, Wasington
+      <li>
+      <A HREF="http://disi.unitn.it/~rseba/pdpar06/"> PDPAR 2006: Pragmatics of Decision Procedures in Automated Reasoning</A>, Aug 21, 2006, Seattle, Wasington
+      <li>
+      <A HREF="http://www.fsttcs.org/"> FSTTCS 2006:  Foundations of Software Technology and Theoretical Computer Science</A>, Dec 13-15, 2006, Indian Statistical Institute (ISI), Kolkata
+      <li> LPAR-12, 2005: <A HREF="http://www.lpar.net/2005/"> 12th Intl. Conf. on Logic for Programming Artificial Intelligence and Reasoning</A>, Montego Bay, Jamaica, 2nd-6th Dec 2005.
+      <li> FroCoS 2005:  Frontiers of Combining Systems, Sept 19-21, 2005, Vienna.
+      <li> CADE-20, 2005: <A HREF="http://sise.ttu.ee/it/cade/"> Conf. on Automated Deduction</A>.
+      <li> HSCC-2005: Hybrid Systems: Computation and Control, Mar 9--11, Zurich.  
+      <li> IJCAR 2004: Intl Joint Conf on Automated Reasoning.
+      <li> RTA 2004: <A HREF="http://www-i2.informatik.rwth-aachen.de/RTA04/"> Intl Conf on Rewriting Techniques and Applications</A>.
+      <li> HSCC 2003: <A HREF="http://www-hscc03.imag.fr/">Hybrid Systems: Computation and Control </A>.
+      <li> RTA 2003: Rewriting Techniques and Applications RTA 2003.
+      <li> PDPAR 2003: <A HREF="http://www.loria.fr/~ranise/pdpar03/">Pragmatics of Decision Procedures in Automated Reasoning 2003</A>.
+     </ul>
+    </div>
+   <li> Funding:
+    <A HREF="http://www.cise.nsf.gov"> 
+    NSF CISE page </A>, 
+    <A HREF="http://grants1.nih.gov/grants/guide/index.html"> NIH guide for grants and contracts,
+    with links to PAs and RFAs </A>,
+    <A HREF="http://www.darpa.mil/ipto/solicitations/solicitations.htm">
+    Darpa solicitations </A>.
+   </ul>
+  <P> Off : EL 270, SRI Intl., 333 Ravenswood Ave, Menlo Park, CA 94025. Tel : 650-859-4774 <br> <ADDRESS>Ashish Tiwari (Email: tiwari _AT_ csl _DOT_ sri _DOT_ com)</ADDRESS> 
+</BODY>
+</HTML>
